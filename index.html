@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Challenge AluraGeek - Norma Leticia</title>
+</head>
+
+<body>
+
+    <!-- Sección del encabezado -->
+    <header class="cabecera" id="cabecera">
+        <img src="./assets/hearts.svg" alt="hearts">
+        <h3 class="cabecera__title">AluraGeek</h3>
+    </header>
+
+    <!-- Sección principal  -->
+    <main class="principal" id="principal">        
+            <!-- Sección del Formulario -->
+            <section class="formulario" id="formulario">
+                <h3 class="formulario__title">AGREGAR PRODUCTO:</h3>
+                <form class="formproducto__form" name="form" data-formulario>
+                    <input class="formproducto__input" type="text" name="" placeholder="nombre..." minlength="3" maxlength="18" required data-nombre>
+                    <input class="formproducto__input" type="text" name="" placeholder="precio..." pattern="^([0-9]{1,8}(\.[0-9]{1,2})?)" required data-precio>
+                    <input class="formproducto__input" type="text" name="" placeholder="imagen..." required data-imagen>
+                    <div class="formproducto__acciones">
+                        <button class="formproducto__enviar">Enviar</button>
+                        <button class="formproducto__limpiar" data-limpiar>Limpiar</button>
+                    </div>
+                </form>
+            </section>
+            <!-- Sección de productos-->
+            <section class="productos" id="productos">
+                <h3 class="productos__title">MIS PRODUCTOS:</h3>
+                <div class="productos__line" data-productos>
+                    <!-- card -->
+                   
+                </div>
+            </section>        
+    </main>
+
+    <!-- Sección del footer -->
+    <footer class="footer" id="footer">
+        <div class="footer__imagen">
+            <img src="./assets/hearts.svg" alt="">
+            <h3 class="footer__title">AluraGeek</h3>
+        </div>
+        <p>Desarrollado por Norma Leticia Noriega Ramírez</p>
+        <p>ALURA LATAM - 2024</p>
+    </footer>
+
+    <script src="./js/mostrarProductos.js" type="module"></script>
+    <script src="./js/crearProducto.js" type="module"></script>
+    <script src="./js/eliminarProducto.js" type="module"></script>
+</body>
+
+</html>
